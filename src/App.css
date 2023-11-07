@@ -1,0 +1,115 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.outer {
+  padding: 100px;
+
+  .file-card {
+    width: 100%;
+    height: 348px;
+    border: 8px solid var(--color-white)fff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 14px 2px rgba(0, 0, 0, 0.25);
+    min-height: 316px;
+
+    .border-card {
+      width: 100%;
+      height: 100%;
+      border: 1px dashed white;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+
+      .file-icn-card {
+        width: 50px;
+        height: 50px;
+      }
+
+      .text-drag-drop {
+        color: #fff;
+        text-align: center;
+        font-size: 26px;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 12px;
+      }
+
+
+      .text-or {
+        color: #fff;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      .upload-btn {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 17px 48px;
+        color: #373737;
+        font-weight: 500;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+      }
+
+      @media screen and (max-width: 520px) {
+        .text-drag-drop {
+          font-size: 20px;
+        }
+
+        .upload-btn {
+          font-size: 14px;
+          padding: 10px 30 px;
+
+        }
+        .text-or {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
